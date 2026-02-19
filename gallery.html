@@ -8,8 +8,9 @@
 
     <!-- Description -->
     <meta name="description" content="Gallery page showing my work and projects.">
+    <meta name="author" content="Kai Cericola">
 
-    <title>Gallery</title>
+    <title>Kai Cericola — Gallery</title>
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -21,18 +22,23 @@
 
 <div class="wrapper">
 
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
         <h1>Kai's Website</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <h2>Gallery</h2>
 
         <p>
@@ -45,14 +51,25 @@
             <li>Skateboard design created for college</li>
         </ul>
 
-        <img src="images/lake.png" alt="Photo of a lake I took while on a trip">
-        <img src="images/clocktower.jpg" alt="Photograph of a clocktower in the city centre taken for a college project">
-        <img src="images/skateboard.jpg" alt="Skateboard designs created for a college project">
+        <figure>
+            <img src="images/lake.png" alt="Photo of a lake I took while on a trip" loading="lazy">
+            <figcaption>Lake — Personal photography</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/clocktower.jpg" alt="Photograph of a clocktower in the city centre taken for a college project" loading="lazy">
+            <figcaption>City clocktower — College project</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/skateboard.jpg" alt="Skateboard designs created for a college project" loading="lazy">
+            <figcaption>Skateboard designs — College project</figcaption>
+        </figure>
         <!--Column and then description next-->
     </main>
 
     <footer>
-        <p>© 2026 Kai Cericola</p>
+        <small>© 2026 Kai Cericola</small>
     </footer>
 
 </div>

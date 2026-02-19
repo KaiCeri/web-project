@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">">
 
     <!-- Make page responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Description -->
     <meta name="description" content="Home page for Kai's website.">
+    <meta name="author" content="Kai Cericola">
 
-    <title>Home</title>
+    <title>Kai Cericola — Home</title>
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/styles.css">
@@ -22,28 +23,36 @@
 
 <div class="wrapper">
 
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <!-- Header -->
     <header>
         <h1>Kai's Website</h1>
 
         <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Main content -->
-   <main>
+   <main id="main">
     <h2>Home</h2>
     <p>Welcome to my webpage. Here you will be able to learn more about me, view my work, and find my contact details. Below is a photo I took for a college project.</p>
-    <img src="images/royalinfirmary.jpg" alt="Photo of an old building I took for college">
+    <figure>
+        <img src="images/royalinfirmary.jpg" alt="Royal Infirmary, Glasgow — photo taken by Kai for a college project" loading="lazy">
+        <figcaption>Royal Infirmary — College project photo</figcaption>
+    </figure>
 </main>
     <!-- Footer -->
     <footer>
-        <p>© 2026 Kai Cericola</p>
+        <small>© 2026 Kai Cericola</small>
     </footer>
 
 </div>

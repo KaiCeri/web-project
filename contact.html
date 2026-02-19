@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Description -->
-    <meta name="description" content="Gallery page showing my work and projects.">
+    <meta name="description" content="Contact Kai Cericola — get in touch for college projects and collaborations.">
+    <meta name="author" content="Kai Cericola">
 
-    <title>Contact</title>
+    <title>Kai Cericola — Contact</title>
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -21,28 +22,36 @@
 
 <div class="wrapper">
 
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
         <h1>Kai's Website</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
     <div class="content-container">
         <h2>Contact Me</h2>
-        <p>Email me at kaicericola1@outlook.com</p>
+        <p>Email me at <a href="mailto:kaicericola1@outlook.com">kaicericola1@outlook.com</a></p>
         <p>You can also reach me via my college profile or social media profiles.</p>
-        <img src="images/sunset.png" alt="Photo of the sunset I took from my house">
+        <figure>
+            <img src="images/sunset.png" alt="Sunset view from my house" loading="lazy">
+            <figcaption>Sunset — Personal photography</figcaption>
+        </figure>
     </div>
 </main>
 
     <footer>
-        <p>© 2026 Kai Cericola</p>
+        <small>© 2026 Kai Cericola</small>
     </footer>
 
 </div>
